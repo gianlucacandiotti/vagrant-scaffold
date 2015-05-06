@@ -25,4 +25,4 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 
 For example to add the apt module you would type:
 
-	`git submodule add git@github.com:puppetlabs/puppetlabs-apt.git puppet/modules/apt`
+	git submodule add git@github.com:puppetlabs/puppetlabs-apt.git puppet/modules/apt
