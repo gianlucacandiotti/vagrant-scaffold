@@ -16,6 +16,11 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 1. `git remote add -f vagrant-env git@github.com:GianlucaCandiotti/vagrant-scaffold.git`
 2. `git subtree add --prefix vagrant-env vagrant-env master --squash`
 
+## Updating the subtree from your repository
+
+1. `git fetch vagrant-env master`
+2. `git subtree pull --prefix vagrant-env vagrant-env master --squash`
+
 ## Adding puppet modules as submodules
 
 1. From the command line navigate to the vagrant-env folder.
