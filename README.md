@@ -17,3 +17,10 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 2. `git merge -s ours --no-commit vagrant-env/master`
 3. `git read-tree --prefix=vagrant-env/ -u vagrant-env/master`
 4. `git commit -m "Added Vagrant environment as a subtree merged in vagrant-env"`
+
+## Adding puppet modules as submodules
+
+1. From the command line navigate to the vagrant-env folder.
+2. To add a puppet submodule type: `git submodule add [repository-url] puppet/modules/name_of_the_module`
+
+For example to add the apt module you would type: `git submodule add git@github.com:puppetlabs/puppetlabs-apt.git puppet/modules/apt`
