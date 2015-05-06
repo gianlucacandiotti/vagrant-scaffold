@@ -10,3 +10,10 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 	- Vagrantfile
 - app
 	- **Your project files go here**
+
+## Adding this repository as a subtree
+
+1. `git remote add -f vagrant-env git@github.com:GianlucaCandiotti/vagrant-scaffold.git`
+2. `git merge -s ours --no-commit vagrant-env/master`
+3. `git read-tree --prefix=vagrant-env/ -u vagrant-env/master`
+4. `git commit -m "Added Vagrant environment as a subtree merged in vagrant-env"`
