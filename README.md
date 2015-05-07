@@ -24,7 +24,8 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 ## Adding puppet modules as submodules
 
 1. From the command line navigate to the vagrant-env folder.
-2. To add a puppet submodule type: `git submodule add [repository-url] puppet/modules/name_of_the_module`
+2. To add a puppet submodule type:
+`git submodule add [repository-url] puppet/modules/name_of_the_module`
 
 For example to add the apt module you would type:
 
