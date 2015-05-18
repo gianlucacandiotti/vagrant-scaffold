@@ -14,6 +14,7 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 ## Adding this repository as a subtree
 
 1. `git remote add -f vagrant-env git@github.com:GianlucaCandiotti/vagrant-scaffold.git`
+
 2. `git subtree add --prefix vagrant-env vagrant-env master --squash`
 
 ## Updating the subtree from your repository
@@ -28,11 +29,11 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 
 2. To add a puppet submodule type:
 
-`git submodule add [repository-url] puppet/modules/name_of_the_module`
+		git submodule add [repository-url] puppet/modules/name_of_the_module
 
 For example to add the apt module you would type:
 
-`git submodule add git@github.com:puppetlabs/puppetlabs-apt.git puppet/modules/apt`
+	git submodule add git@github.com:puppetlabs/puppetlabs-apt.git puppet/modules/apt
 
 ## Running on Windows
 
