@@ -39,6 +39,6 @@ For example to add the apt module you would type:
 
 If you are working on a Windows environment, run this command in a command prompt as administrator in order to allow all kinds of symbolic links to be created on the computer:
 
-`fsutil behavior set SymlinkEvaluation L2L:1 R2R:1 L2R:1 R2L:1`
+	fsutil behavior set SymlinkEvaluation L2L:1 R2R:1 L2R:1 R2L:1
 
 After that reboot your computer to apply changes.
