@@ -1,10 +1,10 @@
 # Vagrant Scaffold
 
-This repository contains the main structure to run a vagrant environment provisioned with puppet. It's recommended to use it as a git subtree inside your repository for better management since the puppet modules should be added later as submodules inside *vagrant-env/puppet/modules* folder.
+This repository contains the main structure to run a vagrant environment provisioned with puppet. It's recommended to use it as a git subtree inside your repository for better management since you'll need to modify some file later on. Also the puppet modules should be added later as submodules inside *vagrant-env/puppet/modules* folder since we aren't touching them most likely.
 
-It's already set up to use ubuntu 14.10 distribution on virtual box although this can be easily changed on the **Vagrantfile**. The sync folder currently points to an */app* folder outside the vagrant environment folder. So your project structure should look like this:
+It's already set up to use ubuntu 14.10 distribution on virtual box although this can be easily changed on the **Vagrantfile**. The sync folder currently points to an */app* folder outside the vagrant environment folder. Your project structure should look like this:
 
-- vagrant-env ( or what ever you want to name this repository inside your project )
+- vagrant-env ( or whatever you want to name this repository inside your project )
 	- .vagrant
 	- puppet
 	- Vagrantfile
@@ -16,6 +16,8 @@ It's already set up to use ubuntu 14.10 distribution on virtual box although thi
 1. `git remote add -f vagrant-env git@github.com:GianlucaCandiotti/vagrant-scaffold.git`
 
 2. `git subtree add --prefix vagrant-env vagrant-env master --squash`
+
+3. Don't forget that the Vagrantfile will look for the *./app* folder as the sync folder. If you already have some files, put them in the *./app* folder so that your structure looks like the one described above. If you are starting from scratch or cloning a repository just create the *./app* folder and put your files in there.
 
 ## Updating the subtree from your repository
 
@@ -42,3 +44,9 @@ If you are working on a Windows environment, run this command in a command promp
 	fsutil behavior set SymlinkEvaluation L2L:1 R2R:1 L2R:1 R2L:1
 
 After that reboot your computer to apply changes.
+
+## Some already configured environments using this repository
+
+	[Node ready environment](https://github.com/GianlucaCandiotti/node-env)
+
+	[Node/Mongo ready environment](https://github.com/GianlucaCandiotti/mongo-node-env)
