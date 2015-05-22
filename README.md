@@ -45,8 +45,8 @@ If you are working on a Windows environment, run this command in a command promp
 
 After that reboot your computer to apply changes.
 
-## Some already configured environments using this repository
+### Some already configured environments using this repository
 
-	[Node ready environment](https://github.com/GianlucaCandiotti/node-env)
+[Node ready environment](https://github.com/GianlucaCandiotti/node-env)
 
-	[Node/Mongo ready environment](https://github.com/GianlucaCandiotti/mongo-node-env)
+[Node/Mongo ready environment](https://github.com/GianlucaCandiotti/mongo-node-env)
